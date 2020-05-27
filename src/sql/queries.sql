@@ -5,7 +5,7 @@ CREATE TABLE `awa`.`prueba` (
   `sexo` VARCHAR(10) NOT NULL,
   `primera_aparicion` VARCHAR(60) NOT NULL,
   `nombre` VARCHAR(100) NOT NULL,
-  `apariciones` VARCHAR(75) NOT NULL,
+  `apariciones` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`idprueba`));
 
 CREATE TABLE `c18001211`.`prueba2` (

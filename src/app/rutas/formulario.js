@@ -122,8 +122,7 @@ app.post('/power' , (req,resp,next)=>{
 
 
 app.post('/insert' , (req,resp,next)=>{
-    console.log(req.body.poderes);
-    console.log(req.body.id);
+    
     let query = `INSERT INTO prueba3 (idprueba,poderes) VALUES (${req.body.id} ,'${req.body.poderes}')`;
       conn.query(query, (error,filas,col) =>{
               if(error) resp.status(500).json({status:0, message:"No se pudo insertar el poder"});
